@@ -43,7 +43,23 @@ main{
 
 /* #endregion left bar */
 
-/* #region music */
+/* #region music selection */
+
+/* #region up bar */
+.up_bar{
+height: 100px;
+background-color: rgba(0, 0, 0, 0.489);
+width: 100%;
+}
+.upgrade{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* #endregion up bar */
+
 
 .music{
     width: calc(100% - 200px);
