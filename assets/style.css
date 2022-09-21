@@ -1,0 +1,27 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+main{
+    display: flex;
+}
+.left_bar{
+    height: 100vh;
+    width: 200px;
+    background-color: aqua;
+}
+.music{
+    width: calc(100% - 200px);
+    height: 100vh;
+    background-color: blueviolet;
+}
+.down_bar{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+
