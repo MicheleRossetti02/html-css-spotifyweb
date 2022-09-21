@@ -9,27 +9,31 @@
 </head>
 <body>
     <main>
+        <!-- barra laterale sinistra -->
         <section class="left_bar">
 
             <!-- parte alta -->
             <div class="main_function">
                 <!-- spotify_logo -->
                 <div class="logo">
-                    logo spotify
+                    <img src="./assets/img/logo.svg" alt="">
                 </div>
 
                 <!-- funzioni principali -->
                 <div class="functions">
                     <div class="home function">
-                        img+  <a  href=""><link rel="stylesheet" href="">Home</a>
+                        <img class="symbol" src="./assets/img/home.svg" alt="">
+                          <a class="text active link" href="">Home</a>
 
                     </div>
                     <div class="serch function">
-                        img+  <a  href=""><link rel="stylesheet" href="">Cerca</a>
+                        <img class="symbol" src="./assets/img/search.svg" alt="">
+                         <a  class="text link" href="">Cerca</a>
 
                     </div>
                     <div class="library function">
-                        img+  <a  href=""><link rel="stylesheet" href="">Libreria</a>
+                        <img class="symbol" src="./assets/img/libreria.svg" alt="">
+                          <a  class="text link" href="">Libreria</a>
 
                     </div>
 
@@ -38,26 +42,30 @@
                 <!-- playlist -->
                 <div class="playlist">
                     <div class="new_playlist">
-                        img+  <a  href=""><link rel="stylesheet" href="">Crea Playlist</a>
+                        <h3>PLAYLIST</h3>
+                        <span class="add_playlist">+</span>
+                        <a class="text link" href="">Crea Playlist</a>
                     </div>
                     <div class="playlist_list">
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
-                        <a  href=""><link rel="stylesheet" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
+                        <a class="text link" href="">Nome Playlist</a>
                     </div>
                 </div>
             </div>
             <!-- parte bassa -->
             <div class="other_function">
                 <div class="download ">
-                    symbol+<a  href=""><link rel="stylesheet" href="">Installa app</a>
+                    <img class="symbol_small" src="./assets/img/download.svg" alt="">
+                    <a class="text link" href="">Installa app</a>
                 </div>
                 <div class="user">
-                    symbol+ <a href="">Michele Rossetti</a>
+                    <img class="symbol_user" src="./assets/img/profile.svg" alt="">
+                 <a class="text link" href="">MicheleRossetti</a>
                 </div>
             </div>
 
@@ -68,8 +76,8 @@
         <section class="music_selection">
             <!-- barra sopra  -->
             <div class="up_bar">
-                <div class="upgrade">
-                    <span>EFFETTUA L'UPGRADE</span>
+                <div class="do_upgrade">
+                    <span class="upgrade">EFFETTUA L'UPGRADE</span>
                 </div>
             </div>
 
@@ -107,21 +115,67 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+
+            <!-- for you -->
+            <div class="for_you">
+                <div class="conteiner">
+                    <div class="row_for_you">
+                        <div class="card">
+                            <div class="music">
+    
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="music">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- artisti famosi -->
+
+            <div class="famous_artist">
+                <div class="conteiner">
+                    <div class="row_artist">
+                        <div class="card">
+                            <div class="artist">
+    
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="artist">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
 
         </section>
     </main>
 
+    <!-- down bar -->
     <footer>
         <div class="conteiner">
             <div class="down_bar">
                <div class="row_down_bar">
+
+                    <!-- icona musica -->
                     <div class="col_1">
                         <div class="music_display"></div>
                     </div>
+
+                    <!-- barra canzone -->
                     <div class="col_2">
-                        <div class="play_disply"></div>
+                        <div class="play_display"></div>
                     </div>
+
+                    <!-- barra volume -->
                     <div class="col_3">
                         <div class="volume_display"></div>
                     </div>
