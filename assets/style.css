@@ -219,6 +219,11 @@ display: flex;
 background-color: darkmagenta;
 height: 50px;
 }
+
+/* #endregion col_1 */
+
+/* #region col_2 */
+
 .col_2{
     width: calc(100%/ 12 *6);
     background-color: aquamarine;
