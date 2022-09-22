@@ -209,6 +209,7 @@ width: calc(100% / 12 *2);
 text-align: center;
 color: white;
 margin: 1rem 0;
+display: inline;
 }
 
 .music>img{
@@ -406,3 +407,46 @@ border-radius: 10px;
 
 
 /* #endregion down bar */
+
+.background_picture{
+    background-color: #000000a2;
+    /* background-size: cover; */
+    width: 100%;
+    height: calc(100% - 13px);
+    position: absolute;
+    display: none;
+
+}
+
+/* #region hover */
+.link:hover{
+    color: white;
+}
+.link_music:hover{
+    color: white;
+text-decoration: underline;
+}
+.card:hover{
+    cursor: pointer;
+    /* display: block; */
+}
+.music_symbol:hover{
+    color: white;
+}
+.current_time_music_bar:hover{
+    background-color: green;
+}
+.current_volume:hover{
+    background-color: green;
+}
+
+/* #endregion hover */
+
+.music{
+position: relative;
+}
+.card:hover+ .background_picture{
+    display: block;
+}
+
+
