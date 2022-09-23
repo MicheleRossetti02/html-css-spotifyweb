@@ -36,9 +36,9 @@ h3{
     flex-direction: column;
     justify-content: space-between;
     /* position:fixed ; */
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     padding-top: 1rem;
-padding-right: 1rem;
+/* padding-right: 1rem; */
 overflow-y: auto;
 }
 
@@ -46,7 +46,9 @@ overflow-y: auto;
     width: 150px;
     margin-bottom: 1rem;
 }
-
+.logo.mobile{
+    display: none;
+}
 /* #region simboli */
 .symbol{
     width: 30px;
@@ -73,11 +75,12 @@ width: 15px;
 }
 .function{
     margin-bottom: 5px;
+    padding-left: 1rem;
 }
+.home.function{
+    border-left: 3px solid greenyellow;
+} 
 
-/* .home.function{
-    border-left: 1px solid green;
-} */
 
 
 .text.active{
@@ -126,6 +129,7 @@ margin: 1rem 0;
     border-top: 1px solid white;
     display: flex;
     align-items: center;
+    margin-right: 16px;
 }
 .user>img{
     margin-right: 0.6rem;
@@ -199,13 +203,15 @@ color: var(--text);
 }
 
 .active_1{
-border-bottom: 1px solid green;
+border-bottom: 1px solid greenyellow;
 padding-bottom: 0px;
 }
 
 /* #region recently */
 .row_recently{
     display: flex;
+    flex-wrap: wrap;
+
 }
 .card{
 padding: 0.5rem;
@@ -455,3 +461,133 @@ position: relative;
 }
 
 
+
+/* region media */
+
+@media screen and (max-width: 878px ) {
+    
+    .card{
+        padding: 0.2rem;
+        width: calc(100% / 12 *3);
+        /* height: 100px; */
+        text-align: center;
+        color: white;
+        margin: 1rem 0;
+        display: inline;
+        }
+} 
+
+
+@media screen and (max-width:639px){
+    .card{
+        padding: 0.2rem;
+        width: calc(100% / 12 *6);
+        /* height: 100px; */
+        text-align: center;
+        color: white;
+        margin: 1rem 0;
+        display: inline;
+        }
+
+        .row_option{
+            flex-wrap: wrap;
+        }
+    .option{
+            margin: 10px 0px;
+            width: calc(100% / 12 *4);
+        }
+        .current_music_artist{
+            width: 75px;
+        }
+        .symbol_current_music{
+            /* margin-left: 30px; */
+    width: 30px;
+    flex-direction: column;
+    }
+    .volume_display{
+        width: 100%;
+    }
+    .volume_display>i{
+    padding-right: 2px;
+    width: 17px;
+    }
+    .volume{
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width:552px) {
+    .logo{
+        display: none;
+    }
+    .logo.mobile{
+        display: inline-block;
+    }
+    .left_bar{
+        width: 50px;
+    }
+    .function{
+        margin-bottom: 5px;
+        padding-left: 0rem;
+    }
+    .home.function{
+        border-left: 0;
+    } 
+    
+    .up_bar{
+        left: 50px;
+    }
+    .do_upgrade{
+        width: calc(100% - 70px);
+    }
+    .music_selection{
+        width: calc(100% - 50px);
+    }
+    .playlist{
+        display: none;
+    }
+    .function>a{
+        display: none;
+    }
+    .left_bar{
+    flex-direction: column;
+    padding-left: 0.7rem;
+    padding-top: 0.5rem;
+    
+    }
+    .download>a{
+        display: none;
+    }
+    .user>span{
+        display: none;
+    }
+    .user{
+        border-top: 0;
+        margin-left: 2px;
+    }
+
+    
+    .card{
+        padding: 0.2rem;
+        width: calc(100% / 12 *6);
+        /* height: 100px; */
+        text-align: center;
+        color: white;
+        margin: 1rem 0;
+        display: inline;
+        }
+
+        .row_option{
+            flex-wrap: wrap;
+        }
+    .option{
+        margin: 10px 0px;
+        width: calc(100% / 12 *3);
+        }
+    .symbol_current_music{
+            /* margin-left: 30px; */
+    width: 30px;
+    flex-direction: column;
+    }
+}
