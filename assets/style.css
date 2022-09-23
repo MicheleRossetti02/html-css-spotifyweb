@@ -124,6 +124,11 @@ margin: 1rem 0;
 .user{
     padding-top: 7px;
     border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+.user>img{
+    margin-right: 0.6rem;
 }
 
 /* #endregion other function */
