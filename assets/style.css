@@ -374,10 +374,13 @@ border-radius: 10px;
     margin: 0 5px;
 }
 .current_time_music_bar{
-    background-color: white;
-    height: 4px;
     width: calc(100% / 12 *4);
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    height: 4px;
+    align-items: center;
 
 }
 
@@ -414,6 +417,14 @@ border-radius: 10px;
     width: 40px;
     border-radius: 10px;
 }
+
+.circle{
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: none;
+}
 /* #endregion col_3 */
 
 
@@ -444,8 +455,11 @@ text-decoration: underline;
 .music_symbol:hover{
     color: white;
 }
-.current_time_music_bar:hover{
+.current_time_music_bar:hover {
     background-color: green;
+}
+.current_time_music_bar:hover + .circle {
+    display: block;
 }
 .current_volume:hover{
     background-color: green;
